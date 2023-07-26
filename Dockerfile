@@ -3,8 +3,6 @@ FROM registry.redhat.io/ubi8:latest
 
 # node.jsの利用に必要なパッケージ（ランタイム）をインストール
 RUN dnf module install nodejs -y
-RUN npm install express ejs --save
-
 
 # コンテナ起動した後に遷移させる作業ディレクトリの設定
 WORKDIR /usr/src/app
