@@ -14,6 +14,11 @@ const server = http.createServer((request, response) => {
     response.write(JSON.stringify(hostname));
     response.end();
   });
+
+  server.listen(8080, () => {
+    console.log(`Server running on port ${port}`);
+  });
+  
   // 改修するときには左端のコメントアウトを削除 */ 
 
 /* //改修するときには左端のコメントアウトを削除
@@ -24,7 +29,8 @@ app.get('/', (req, res) => {
   const hostname = os.hostname();
   res.render('index', { hostname });
 });
-*/ //改修するときには左端のコメントアウトを削除
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+*/ //改修するときには左端のコメントアウトを削除
