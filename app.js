@@ -1,17 +1,16 @@
-const http = require('http');
+const express = require('express');
 const os = require('os');
+const app = express();
+const port = 3000;
 
+app.set('view engine', 'ejs');
+app.set('views', './views');
 
-const server = http.createServer((request, response) => {
-  response.statusCode = 200;
-  response.setHeader('Content-Type', 'application/json');
-
+app.get('/', (req, res) => {
   const hostname = os.hostname();
-
-  response.write(JSON.stringify(hostname));
-  response.end();
+  res.render('index', { hostname });
 });
 
-server.listen(8080, () => {
-  console.log('Server running at http://localhost:8080');
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
