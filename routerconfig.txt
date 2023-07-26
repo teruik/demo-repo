@@ -1,0 +1,6 @@
+https://access.redhat.com/documentation/ja-jp/openshift_container_platform/3.11/html/architecture/load-balancing
+
+
+ルーターのクッキー解除、ラウンドロビンのロードバランスを実現
+haproxy.router.openshift.io/balance: roundrobin
+haproxy.router.openshift.io/disable_cookies: 'true'
