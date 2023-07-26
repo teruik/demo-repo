@@ -2,11 +2,16 @@
 <html>
 <head>
   <title>Host Name Example</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <style>
+    /* CSSスタイルを記述 */
+    .hostname {
+      color: red;
+    }
+  </style>
 </head>
 <body>
   <!-- <h1>Hello, Welcome to <%= hostname %>!</h1> -->
   
-   <h1>Hello, Welcome to <span class="font_color"> <%= hostname %> </span> !</h1> 
+  <h1>Hello, Welcome to <span class="hostname"><%= hostname %></span>!</h1> 
 </body>
 </html>
