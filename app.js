@@ -2,8 +2,8 @@ const http = require('http');
 const os = require('os');
 const port = 8080;
 //改修するときには左端のコメントアウトを削除
-const app = express();
 const express = require('express');
+const app = express();
  //改修するときには左端のコメントアウトを削除 
 
 
