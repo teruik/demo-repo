@@ -1,8 +1,11 @@
-const express = require('express');
 const http = require('http');
 const os = require('os');
-const app = express();
 const port = 8080;
+/* //改修するときには左端のコメントアウトを削除
+const app = express();
+const express = require('express');
+*/ //改修するときには左端のコメントアウトを削除 
+
 
 // /* 改修するときには左端のコメントアウトを削除
 const server = http.createServer((request, response) => {
