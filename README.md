@@ -8,3 +8,7 @@
         - view/index.ejsのコメントアウトを削除するとホスト名に赤い色が付きます
         - Source to Image (S2I) によってデプロイしてください。
         - UBIはNode.jsを用いて下さい。
+
+# 本ハンズオンアプリを作るのに参考にしたChatGPTとの対話ログ
+-   ご興味あればごらんください
+    - https://chat.openai.com/share/08830155-9c0b-49da-96b7-95e227e1554f
